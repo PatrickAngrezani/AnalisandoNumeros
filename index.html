@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analisando números</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="multiplicacao.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <h1>Analisando números</h1>
+    </header>
+    <section>
+      <!-- digite o valor -->
+      <label for="num">
+        Digite um valor que esteja entre 1 e 100:
+        <input
+          class="inputnum"
+          type="number"
+          id="valor"
+          placeholder="Digite um valor"
+        />
+        <input type="button" value="Adicionar" onclick="adicionar()" />
+        <!-- valores -->
+        <select name="campoValor" id="campoValor" size="10"></select>
+        <br />
+        <input
+          type="button"
+          value="Finalizar"
+          id="finalizar"
+          onclick="finalizar()"
+        />
+        <div id="res"></div>
+      </label>
+    </section>
+    <footer>
+      <p>&copy;PatrickAngrezani</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
